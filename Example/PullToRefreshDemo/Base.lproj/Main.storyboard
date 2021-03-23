@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJe-a3-lly">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spinner Animation Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SpinnerAnimationController" id="BYZ-38-t0r" customClass="SpinnerAnimationController" customModule="PullToRefreshDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-Qe-cjV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="704"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Iho-cn-LfX"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ho3-RI-rFB"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynq-fZ-hno">
+                                <rect key="frame" x="20" y="802" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.72941176470000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BEM-iJ-S36"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Wave Animation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickWaveAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fD5-OT-hGO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spinner Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EC-ma-QqE">
+                                <rect key="frame" x="10" y="54" width="394" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ynq-fZ-hno" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="54x-kf-Vnb"/>
+                            <constraint firstItem="Rrd-Qe-cjV" firstAttribute="top" secondItem="9EC-ma-QqE" secondAttribute="bottom" constant="10" id="9Xe-k9-9vt"/>
+                            <constraint firstItem="Rrd-Qe-cjV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ANn-V5-5nn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9EC-ma-QqE" secondAttribute="trailing" constant="10" id="FR6-Mj-6Ng"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rrd-Qe-cjV" secondAttribute="trailing" id="GnC-tC-p3L"/>
+                            <constraint firstItem="Ynq-fZ-hno" firstAttribute="top" secondItem="Rrd-Qe-cjV" secondAttribute="bottom" constant="10" id="L0f-r8-H3q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ynq-fZ-hno" secondAttribute="bottom" constant="10" id="LIL-fn-F4X"/>
+                            <constraint firstItem="9EC-ma-QqE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Pn0-LA-okI"/>
+                            <constraint firstItem="9EC-ma-QqE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fE5-4l-mk7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ynq-fZ-hno" secondAttribute="trailing" constant="20" id="gdy-lS-32X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OYf-kP-pns"/>
+                    <connections>
+                        <outlet property="tableViewRefersh" destination="Rrd-Qe-cjV" id="Kwm-y2-NYw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
+        </scene>
+        <!--Wave Animation Controller-->
+        <scene sceneID="am0-ZF-T5m">
+            <objects>
+                <viewController storyboardIdentifier="WaveAnimationController" id="OCK-Xe-p7O" customClass="WaveAnimationController" customModule="PullToRefreshDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FAw-6B-6Uo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-PQ-BxY">
+                                <rect key="frame" x="20" y="802" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.72941176470000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="O5U-wk-cDg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Pulse Animation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickTextAnimation:" destination="OCK-Xe-p7O" eventType="touchUpInside" id="HQW-gs-TaD"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="99W-Gq-q3M">
+                                <rect key="frame" x="0.0" y="88" width="414" height="704"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OCK-Xe-p7O" id="A0N-bx-I9C"/>
+                                    <outlet property="delegate" destination="OCK-Xe-p7O" id="O3k-Tm-hum"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wave Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD4-FM-Hfu">
+                                <rect key="frame" x="10" y="54" width="394" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wbm-wH-Ywr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WD4-FM-Hfu" firstAttribute="leading" secondItem="wbm-wH-Ywr" secondAttribute="leading" constant="10" id="2aD-mc-m7M"/>
+                            <constraint firstItem="99W-Gq-q3M" firstAttribute="leading" secondItem="wbm-wH-Ywr" secondAttribute="leading" id="2bu-5w-pT7"/>
+                            <constraint firstItem="99W-Gq-q3M" firstAttribute="top" secondItem="WD4-FM-Hfu" secondAttribute="bottom" constant="10" id="Alv-fC-faZ"/>
+                            <constraint firstItem="Ghd-PQ-BxY" firstAttribute="leading" secondItem="wbm-wH-Ywr" secondAttribute="leading" constant="20" id="D94-a1-ZWC"/>
+                            <constraint firstItem="WD4-FM-Hfu" firstAttribute="top" secondItem="wbm-wH-Ywr" secondAttribute="top" constant="10" id="DYh-Cl-6kP"/>
+                            <constraint firstItem="wbm-wH-Ywr" firstAttribute="trailing" secondItem="99W-Gq-q3M" secondAttribute="trailing" id="LVw-3f-tCJ"/>
+                            <constraint firstItem="Ghd-PQ-BxY" firstAttribute="top" secondItem="99W-Gq-q3M" secondAttribute="bottom" constant="10" id="TyT-AA-iJI"/>
+                            <constraint firstItem="wbm-wH-Ywr" firstAttribute="trailing" secondItem="Ghd-PQ-BxY" secondAttribute="trailing" constant="20" id="Yg7-jT-ngh"/>
+                            <constraint firstItem="wbm-wH-Ywr" firstAttribute="bottom" secondItem="Ghd-PQ-BxY" secondAttribute="bottom" constant="10" id="hRX-MA-VU5"/>
+                            <constraint firstItem="wbm-wH-Ywr" firstAttribute="trailing" secondItem="WD4-FM-Hfu" secondAttribute="trailing" constant="10" id="z51-u9-NyE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblWaveAnimation" destination="99W-Gq-q3M" id="LQW-kw-pFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDj-W3-gIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="87.723214285714278"/>
+        </scene>
+        <!--Pulse Animation Controller-->
+        <scene sceneID="Nev-2g-SyV">
+            <objects>
+                <viewController storyboardIdentifier="PulseAnimationController" id="5Hy-1o-DzP" customClass="PulseAnimationController" customModule="PullToRefreshDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWK-Rm-Tyd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-Il-BgE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5Hy-1o-DzP" id="Jtk-oC-oha"/>
+                                    <outlet property="delegate" destination="5Hy-1o-DzP" id="Pg6-LS-Rc1"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pulse Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-py-030">
+                                <rect key="frame" x="10" y="54" width="394" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IRw-1K-S8Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IRw-1K-S8Y" firstAttribute="trailing" secondItem="ao1-py-030" secondAttribute="trailing" constant="10" id="1WC-mP-3cU"/>
+                            <constraint firstItem="ao1-py-030" firstAttribute="leading" secondItem="IRw-1K-S8Y" secondAttribute="leading" constant="10" id="izU-Pn-he9"/>
+                            <constraint firstItem="Vlt-Il-BgE" firstAttribute="leading" secondItem="IRw-1K-S8Y" secondAttribute="leading" id="jHf-8o-LHl"/>
+                            <constraint firstAttribute="bottom" secondItem="Vlt-Il-BgE" secondAttribute="bottom" id="jra-mv-nso"/>
+                            <constraint firstItem="Vlt-Il-BgE" firstAttribute="top" secondItem="ao1-py-030" secondAttribute="bottom" constant="10" id="mjH-Vo-k2N"/>
+                            <constraint firstItem="ao1-py-030" firstAttribute="top" secondItem="IRw-1K-S8Y" secondAttribute="top" constant="10" id="mvy-4H-Dx3"/>
+                            <constraint firstItem="IRw-1K-S8Y" firstAttribute="trailing" secondItem="Vlt-Il-BgE" secondAttribute="trailing" id="vmz-fH-78d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblViewAnimation" destination="Vlt-Il-BgE" id="cTl-4O-1WM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2X-ae-tX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2347.826086956522" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rPW-iK-jxc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qJe-a3-lly" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LVn-aj-sHv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KhE-VG-eHc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXw-hj-NlD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
