@@ -1,8 +1,8 @@
 <a href="https://www.simform.com/"><img src="https://github.com/SimformSolutionsPvtLtd/SSToastMessage/blob/master/simformBanner.png"></a>
-# SSPullToRefresh
+# SSCustomPullToRefresh
 
 
-SSPullToRefresh is an open-source library that uses UIKit to add an animation to the pull to refresh view in a UITableView and UICollectionView.
+SSCustomPullToRefresh is an open-source library that uses UIKit to add an animation to the pull to refresh view in a UITableView and UICollectionView.
 
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
@@ -14,7 +14,7 @@ SSPullToRefresh is an open-source library that uses UIKit to add an animation to
 #### Animation Type
 | Spinner Animation | Pulse Animation | Wave Animation | Wave Animation |
 | :--: | :-----: | :--: | :--: |
-| ![Alt text](https://github.com/mobile-simformsolutions/SSPullToRefresh/blob/feature/ProjectSetup/spinnerAnimation.gif?raw=true)  | ![Alt text](https://github.com/mobile-simformsolutions/SSPullToRefresh/blob/feature/ProjectSetup/pulseAnimation.gif?raw=true) | ![Alt text](https://github.com/mobile-simformsolutions/SSPullToRefresh/blob/feature/ProjectSetup/waveAnimation.gif?raw=true) | ![Alt text](https://github.com/mobile-simformsolutions/SSPullToRefresh/blob/feature/ProjectSetup/waveSingleColor.gif?raw=true)
+| ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/spinnerAnimation.gif?raw=true)  | ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/pulseAnimation.gif?raw=true) | ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/waveAnimation.gif?raw=true) | ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/waveSingleColor.gif?raw=true)
 
 # Requirements
   - iOS 10.0+
@@ -23,22 +23,22 @@ SSPullToRefresh is an open-source library that uses UIKit to add an animation to
 # Installation
 #### CocoaPods
  
-- You can use CocoaPods to install SSPullToRefresh by adding it to your Podfile:
+- You can use CocoaPods to install SSCustomPullToRefresh by adding it to your Podfile:
 
        use_frameworks!
-       pod 'SSPullToRefresh'
+       pod 'SSCustomPullToRefresh'
 
-- import SSPullToRefresh
+- import SSCustomPullToRefresh
 
 #### Manually
--   Download and drop **SSPullToRefresh** folder in your project.
+-   Download and drop **SSCustomPullToRefresh** folder in your project.
 -   Congratulations!
 
 #### Swift Package Manager
--   When using Xcode 11 or later, you can install `SSPullToRefresh` by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Alternatively, you can go to `File` > `Swift Packages` > `Add Package Dependencies...`
+-   When using Xcode 11 or later, you can install `SSCustomPullToRefresh` by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Alternatively, you can go to `File` > `Swift Packages` > `Add Package Dependencies...`
 ```swift
 dependencies: [
-    .package(url: "https://github.com/mobile-simformsolutions/SSPullToRefresh.git", from: "1.0.0")
+    .package(url: "https://github.com/mobile-simformsolutions/SSCustomPullToRefresh.git", from: "1.0.0")
 ]
 ```
 
@@ -48,12 +48,12 @@ dependencies: [
 $ brew update
 $ brew install carthage
 ```
-To integrate `SSPullToRefresh` into your Xcode project using Carthage, add the following line to your `Cartfile`:
+To integrate `SSCustomPullToRefresh` into your Xcode project using Carthage, add the following line to your `Cartfile`:
 
 ```ogdl
-github "mobile-simformsolutions/SSPullToRefresh"
+github "mobile-simformsolutions/SSCustomPullToRefresh"
 ```
-Run `carthage` to build and drag the `SSPullToRefresh`(Sources/SSPullToRefresh) into your Xcode project.
+Run `carthage` to build and drag the `SSCustomPullToRefresh`(Sources/SSCustomPullToRefresh) into your Xcode project.
 
 # How It Works
 - You can use it for any component having a base class as ScrollView like TableView or CollectionView.
@@ -61,7 +61,7 @@ Run `carthage` to build and drag the `SSPullToRefresh`(Sources/SSPullToRefresh) 
 #### 1. Spinner Animation
 - SpinnerAnimationView takes image and backgroundColor as an input parameter. You can provide it as per your choice.
 
-      spinnerAnnimation = SpinnerAnimationView(image: UIImage(named: "spinner")!, backgroundColor: .purple)           
+      spinnerAnnimation = SpinnerAnimationView(image: UIImage(named: "spinner"), backgroundColor: .purple)           
       spinnerAnnimation.delegate = self   
       spinnerAnnimation.parentView = self.tableView    
       spinnerAnnimation.setupRefreshControl()
@@ -96,7 +96,7 @@ Run `carthage` to build and drag the `SSPullToRefresh`(Sources/SSPullToRefresh) 
       }
 
 # Inspired 
--   SSPullToRefresh(SineWaveAnimationView) inspired from [WaveAnimationView](https://github.com/noa4021J/WaveAnimationView)
+-   SSCustomPullToRefresh(SineWaveAnimationView) inspired from [WaveAnimationView](https://github.com/noa4021J/WaveAnimationView)
 
 
 

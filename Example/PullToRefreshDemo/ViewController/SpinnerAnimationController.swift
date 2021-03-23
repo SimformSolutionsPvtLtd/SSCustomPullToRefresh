@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SSPullToRefresh
+import SSCustomPullToRefresh
 
 class SpinnerAnimationController: UIViewController {
     
@@ -24,7 +24,7 @@ class SpinnerAnimationController: UIViewController {
     
     // MARK: - SetUpRefreshControl
     func setUpSpinnerAnimation() {
-        spinnerAnnimation = SpinnerAnimationView(image: UIImage(named: "spinner")!, backgroundColor: .purple)
+        spinnerAnnimation = SpinnerAnimationView(image: UIImage(named: "spinner") ?? UIImage(), backgroundColor: .purple)
         spinnerAnnimation.delegate = self
         spinnerAnnimation.parentView = self.tableViewRefersh
         spinnerAnnimation.setupRefreshControl()
@@ -32,7 +32,9 @@ class SpinnerAnimationController: UIViewController {
     
     // MARK: - Action
     @IBAction func onClickWaveAnimation(_ sender: Any) {
-        let waveAnimationController = self.storyboard?.instantiateViewController(withIdentifier: "WaveAnimationController") as! WaveAnimationController
+        guard let waveAnimationController = self.storyboard?.instantiateViewController(withIdentifier: "WaveAnimationController") as? WaveAnimationController else {
+            return
+        }
         self.navigationController?.pushViewController(waveAnimationController, animated: true)
     }
     
@@ -47,12 +49,12 @@ extension SpinnerAnimationController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let CellIdentifier = "Cell";
-        var cell : UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
+        var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: CellIdentifier)
         }
         // Configure the cell...
-        cell!.textLabel!.text = "Row \(indexPath.row + 1)"
+        cell?.textLabel?.text = "Row \(indexPath.row + 1)"
         return cell!
     }
     
