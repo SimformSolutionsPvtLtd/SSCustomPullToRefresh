@@ -1,0 +1,16 @@
+PODS:
+  - SSPullToRefresh (1.0.0)
+
+DEPENDENCIES:
+  - SSPullToRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  SSPullToRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSPullToRefresh: b3a0a07b81c9e77980ec6a941b99545b637ade3c
+
+PODFILE CHECKSUM: 51aa77ed710de35d4a0579f128ce923a19d0b07b
+
+COCOAPODS: 1.10.1
