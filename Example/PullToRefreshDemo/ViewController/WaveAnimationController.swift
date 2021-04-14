@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SSPullToRefresh
+import SSCustomPullToRefresh
 
 class WaveAnimationController: UIViewController {
     
@@ -32,7 +32,9 @@ class WaveAnimationController: UIViewController {
     
     // MARK: - Action
     @IBAction func onClickTextAnimation(_ sender: Any) {
-        let pulseAnimationController = self.storyboard?.instantiateViewController(withIdentifier: "PulseAnimationController") as! PulseAnimationController
+        guard let pulseAnimationController = self.storyboard?.instantiateViewController(withIdentifier: "PulseAnimationController") as? PulseAnimationController else {
+            return
+        }
         self.navigationController?.pushViewController(pulseAnimationController, animated: true)
     }
     
@@ -47,12 +49,12 @@ extension WaveAnimationController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let CellIdentifier = "Cell";
-        var cell : UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
+        var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: CellIdentifier)
         }
         // Configure the cell...
-        cell!.textLabel!.text = "Row \(indexPath.row + 1)"
+        cell?.textLabel?.text = "Row \(indexPath.row + 1)"
         return cell!
     }
     
