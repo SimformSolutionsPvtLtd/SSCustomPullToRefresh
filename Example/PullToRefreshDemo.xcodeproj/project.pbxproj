@@ -10,7 +10,6 @@
 		03297D06260B0A5600499B1A /* PulseAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03297D05260B0A5600499B1A /* PulseAnimationController.swift */; };
 		0356B1AC2609B64A00FD73C5 /* WaveAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0356B1AB2609B64A00FD73C5 /* WaveAnimationController.swift */; };
 		03F6D09C260885390064BC26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D09B260885390064BC26 /* AppDelegate.swift */; };
-		03F6D09E260885390064BC26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D09D260885390064BC26 /* SceneDelegate.swift */; };
 		03F6D0A0260885390064BC26 /* SpinnerAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6D09F260885390064BC26 /* SpinnerAnimationController.swift */; };
 		03F6D0A3260885390064BC26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F6D0A1260885390064BC26 /* Main.storyboard */; };
 		03F6D0A5260885390064BC26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F6D0A4260885390064BC26 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		0356B1AB2609B64A00FD73C5 /* WaveAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimationController.swift; sourceTree = "<group>"; };
 		03F6D098260885390064BC26 /* PullToRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F6D09B260885390064BC26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03F6D09D260885390064BC26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		03F6D09F260885390064BC26 /* SpinnerAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerAnimationController.swift; sourceTree = "<group>"; };
 		03F6D0A2260885390064BC26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03F6D0A4260885390064BC26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				03548AD9262565E400E8436D /* ViewController */,
 				03F6D0B0260885570064BC26 /* Resource */,
 				03F6D09B260885390064BC26 /* AppDelegate.swift */,
-				03F6D09D260885390064BC26 /* SceneDelegate.swift */,
 				03F6D0A1260885390064BC26 /* Main.storyboard */,
 				03F6D0A6260885390064BC26 /* LaunchScreen.storyboard */,
 				03F6D0A9260885390064BC26 /* Info.plist */,
@@ -231,7 +228,6 @@
 				03F6D0A0260885390064BC26 /* SpinnerAnimationController.swift in Sources */,
 				03297D06260B0A5600499B1A /* PulseAnimationController.swift in Sources */,
 				03F6D09C260885390064BC26 /* AppDelegate.swift in Sources */,
-				03F6D09E260885390064BC26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -363,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -382,7 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7XJG666ZW;
 				INFOPLIST_FILE = PullToRefreshDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7XJG666ZW;
 				INFOPLIST_FILE = PullToRefreshDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
