@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SSPullToRefresh
+import SSCustomPullToRefresh
 
 class PulseAnimationController: UIViewController {
     
@@ -41,12 +41,12 @@ extension PulseAnimationController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let CellIdentifier = "Cell";
-        var cell : UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
+        var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: CellIdentifier)
         }
         // Configure the cell...
-        cell!.textLabel!.text = "Row \(indexPath.row + 1)"
+        cell?.textLabel?.text = "Row \(indexPath.row + 1)"
         return cell!
     }
     

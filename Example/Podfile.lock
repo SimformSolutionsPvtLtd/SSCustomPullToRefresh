@@ -1,16 +1,16 @@
 PODS:
-  - SSPullToRefresh (1.0.0)
+  - SSCustomPullToRefresh (0.1.0)
 
 DEPENDENCIES:
-  - SSPullToRefresh (from `../`)
+  - SSCustomPullToRefresh (from `../`)
 
 EXTERNAL SOURCES:
-  SSPullToRefresh:
+  SSCustomPullToRefresh:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SSPullToRefresh: b3a0a07b81c9e77980ec6a941b99545b637ade3c
+  SSCustomPullToRefresh: 8a47d5129c3f5f4d040ad35f636f18d72786e5da
 
-PODFILE CHECKSUM: 51aa77ed710de35d4a0579f128ce923a19d0b07b
+PODFILE CHECKSUM: f06a0916bc2e4abe788076b7801519729069b886
 
 COCOAPODS: 1.10.1
