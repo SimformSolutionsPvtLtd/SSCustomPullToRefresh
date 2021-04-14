@@ -1,5 +1,5 @@
 PODS:
-  - SSCustomPullToRefresh (0.1.0)
+  - SSCustomPullToRefresh (1.0.0)
 
 DEPENDENCIES:
   - SSCustomPullToRefresh (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SSCustomPullToRefresh: 8a47d5129c3f5f4d040ad35f636f18d72786e5da
+  SSCustomPullToRefresh: 4b91bbca6e618ec669e468bf425ded6e8fffa759
 
 PODFILE CHECKSUM: f06a0916bc2e4abe788076b7801519729069b886
 
