@@ -18,7 +18,7 @@ SSCustomPullToRefresh is an open-source library that uses UIKit to add an animat
 
 # Requirements
   - iOS 10.0+
-  - Xcode 9+
+  - Xcode 11+
 
 # Installation
 #### CocoaPods
