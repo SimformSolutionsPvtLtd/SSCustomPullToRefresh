@@ -38,7 +38,7 @@ SSCustomPullToRefresh is an open-source library that uses UIKit to add an animat
 -   When using Xcode 11 or later, you can install `SSCustomPullToRefresh` by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Alternatively, you can go to `File` > `Swift Packages` > `Add Package Dependencies...`
 ```swift
 dependencies: [
-    .package(url: "https://github.com/mobile-simformsolutions/SSCustomPullToRefresh.git", from: "1.0.0")
+    .package(url: "https://github.com/mobile-simformsolutions/SSCustomPullToRefresh.git", from: "1.0.1")
 ]
 ```
 

@@ -8,7 +8,7 @@
 
  Pod::Spec.new do |s|
   s.name         = "SSCustomPullToRefresh"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "SSCustomPullToRefresh is an open-source library that uses UIKit to add an animation to the pull to refresh view in a UITableView and UICollectionView."
 
 
