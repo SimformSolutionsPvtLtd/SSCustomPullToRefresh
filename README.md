@@ -14,7 +14,7 @@ SSCustomPullToRefresh is an open-source library that uses UIKit to add an animat
 #### Animation Type
 | Spinner Animation | Pulse Animation | Wave Animation | Wave Animation |
 | :--: | :-----: | :--: | :--: |
-| ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/spinnerAnimation.gif?raw=true)  | ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/pulseAnimation.gif?raw=true) | ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/waveAnimation.gif?raw=true) | ![Alt text](https://github.com/mobile-simformsolutions/SSCustomPullToRefresh/blob/feature/ProjectSetup/waveSingleColor.gif?raw=true)
+| ![Alt text](https://github.com/SimformSolutionsPvtLtd/SSCustomPullToRefresh/blob/master/spinnerAnimation.gif?raw=true)  | ![Alt text](https://github.com/SimformSolutionsPvtLtd/SSCustomPullToRefresh/blob/master/pulseAnimation.gif?raw=true) | ![Alt text](https://github.com/SimformSolutionsPvtLtd/SSCustomPullToRefresh/blob/master/waveAnimation.gif?raw=true) | ![Alt text](https://github.com/SimformSolutionsPvtLtd/SSCustomPullToRefresh/blob/master/waveSingleColor.gif?raw=true)
 
 # Requirements
   - iOS 10.0+
