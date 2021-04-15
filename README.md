@@ -94,6 +94,9 @@ Run `carthage` to build and drag the `SSCustomPullToRefresh`(Sources/SSCustomPul
         func startRefresh() { }   
         func endRefresh() { }
       }
+      
+# License
+- SSCustomPullToRefresh is available under the MIT license. See the LICENSE file for more info.
 
 # Inspired 
 -   SSCustomPullToRefresh(SineWaveAnimationView) inspired from [WaveAnimationView](https://github.com/noa4021J/WaveAnimationView)
