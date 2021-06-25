@@ -94,7 +94,10 @@ Run `carthage` to build and drag the `SSCustomPullToRefresh`(Sources/SSCustomPul
         func startRefresh() { }   
         func endRefresh() { }
       }
-      
+
+# Android Library:
+* Check our android Library also - [SSPullToRefresh][SSPullToRefresh]
+ 
 # License
 - SSCustomPullToRefresh is available under the MIT license. See the LICENSE file for more info.
 
@@ -121,3 +124,4 @@ Run `carthage` to build and drag the `SSCustomPullToRefresh`(Sources/SSCustomPul
 [cocoa-url]:https://img.shields.io/cocoapods/v/LFAlertController.svg
 [PR-image]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [PR-url]:http://makeapullrequest.com
+[SSPullToRefresh]: <https://github.com/SimformSolutionsPvtLtd/SSPullToRefresh>
